@@ -1,0 +1,28 @@
+python ./tools/train.py configs/roi_trans/roi-trans-le90_r50_fpn_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/ --amp
+python ./tools/train.py configs/roi_trans/roi-trans-le90_r50_fpn_1x_dota_nobug.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/ --amp
+python ./tools/train.py configs/rotated_retinanet/rotated-retinanet-rbox-le90_r50_fpn_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/ --amp
+python ./tools/train.py configs/rotated_rtmdet/rotated_rtmdet_l-3x-dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/ --amp
+python ./tools/train.py configs/r3det/r3det-oc_r50_fpn_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/ --amp
+python ./tools/train.py configs/s2anet/s2anet-le90_r50_fpn_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/ --amp
+mmengine - WARNING - Failed to search registry with scope "mmrotate" in the "optim_wrapper" registry tree. As a workaround, the current "optim_wrapper" registry in "mmengine" is used to build instance. This may cause unexpected failure when running the built modules. Please check whether "mmrotate" is a correct scope, or whether the registry is initialized.
+
+https://login.tailscale.com/a/48cb8801a269
+
+from tensor_view.gray_view import gray
+gray(batch_inputs[0][0])
+
+python ./tools/train.py configs/roi_trans/roi-trans-le90_r50_fpn_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/ --amp
+
+configs/roi_trans/roi-trans-le90_yolov8_fpn_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/ --amp
+
+
+
+python ./tools/analysis_tools/benchmark.py configs/roi_trans/roi-trans-le90_yolov8_dota.py --checkpoint ../checkpoints/yolo/epoch_4.pth
+
+python ./tools/train.py configs/s2anet/s2anet-le90_yolo_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
+
+
+
+python ./tools/train.py configs/s2anet/s2anet-le90_yolo_l_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
+
+python ./tools/train.py configs/s2anet/s2anet-le90 --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
