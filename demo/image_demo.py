@@ -7,7 +7,7 @@ from mmdet.apis import inference_detector, init_detector
 from mmrotate.registry import VISUALIZERS
 from mmrotate.utils import register_all_modules
 
-# ./demo.jpg ../configs/roi_trans/roi-trans-le90_r50_fpn_1x_dota.py ../../../total_work_result/roi_result_12/epoch_12.pth --out-file ../../data/out_demo/demo_show.jpg
+
 def parse_args():
     parser = ArgumentParser()
     parser.add_argument('img', help='Image file')
