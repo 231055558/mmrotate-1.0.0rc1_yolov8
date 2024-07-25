@@ -65,7 +65,12 @@ from tools.analysis_tools.benchmark import main as analysis
 # configs/s2anet/exp_module/s2anet-le90_yolo_nbup_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
 # configs/s2anet/exp_module/s2anet-le90_yolo_extracsp_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
 # configs/s2anet/exp_module/s2anet-le90_yolo_splithead_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
-# configs/s2anet/exp_module/s2anet-le90_yolo_extrafpn_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
+# configs/s2anet/exp_module/s2anet-le90_yolo_simple_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
+# configs/s2anet/exp_module/s2anet-le90_yolo_extrafpn_aff_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
+# configs/s2anet/exp_module/s2anet-le90_yolo_exbackbone_extrafpn_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
+# configs/s2anet/exp_module/s2anet-le90_yolo_mscam_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
+# configs/s2anet/exp_module_2/s2anet-le90_yolo_simple_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
+# configs/s2anet/exp_module_2/s2anet-le90_yolo_simple_aff_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
 
 if __name__ == '__main__':
     n = input("输入:")

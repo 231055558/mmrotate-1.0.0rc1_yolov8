@@ -154,15 +154,18 @@ class MS_CAM(nn.Module):
 
 
 
-# if __name__ == '__main__':
-#     import os
-#     os.environ['CUDA_VISIBLE_DEVICES'] = "0"
-#     device = torch.device("cuda:0")
-#
-#     x, residual= torch.ones(8,64, 32, 32).to(device),torch.ones(8,64, 32, 32).to(device)
-#     channels=x.shape[1]
-#
-#     model=AFF(channels=channels)
-#     model=model.to(device).train()
-#     output = model(x, residual)
-#     print(output.shape)
+if __name__ == '__main__':
+    import os
+    os.environ['CUDA_VISIBLE_DEVICES'] = "0"
+    device = torch.device("cuda:0")
+
+    x, residual= torch.ones(2,128, 128, 128).to(device),torch.ones(2,256, 64, 64).to(device)
+    residual_up = nn.Upsample(scale_factor=2, mode='nearest')(residual)
+    de_layer = nn.Conv2d(in_channels=256, out_channels=128, kernel_size=3, stride=1, padding=1).to(device)
+    residual_de = de_layer(residual_up)
+    channels=x.shape[1]
+
+    model=AFF(channels=channels)
+    model=model.to(device).train()
+    output = model(x, residual_de)
+    print(output.shape)
