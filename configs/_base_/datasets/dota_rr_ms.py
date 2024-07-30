@@ -12,6 +12,14 @@ train_pipeline = [
         type='mmdet.RandomFlip',
         prob=0.75,
         direction=['horizontal', 'vertical', 'diagonal']),
+    dict(
+        type='RandomRotate',
+        prob=0.5,
+        angle_range=180,
+        rect_obj_labels=[9, 11]),
+    dict(
+        type='mmdet.Pad', size=(1024, 1024),
+        pad_val=dict(img=(114, 114, 114))),
     dict(type='mmdet.PackDetInputs')
 ]
 val_pipeline = [
@@ -21,6 +29,9 @@ val_pipeline = [
     dict(type='mmdet.LoadAnnotations', with_bbox=True, box_type='qbox'),
     dict(type='ConvertBoxType', box_type_mapping=dict(gt_bboxes='rbox')),
     dict(
+        type='mmdet.Pad', size=(1024, 1024),
+        pad_val=dict(img=(114, 114, 114))),
+    dict(
         type='mmdet.PackDetInputs',
         meta_keys=('img_id', 'img_path', 'ori_shape', 'img_shape',
                    'scale_factor'))
@@ -29,16 +40,20 @@ test_pipeline = [
     dict(type='mmdet.LoadImageFromFile', file_client_args=file_client_args),
     dict(type='mmdet.Resize', scale=(1024, 1024), keep_ratio=True),
     dict(
+        type='mmdet.Pad', size=(1024, 1024),
+        pad_val=dict(img=(114, 114, 114))),
+    dict(
         type='mmdet.PackDetInputs',
         meta_keys=('img_id', 'img_path', 'ori_shape', 'img_shape',
                    'scale_factor'))
 ]
 train_dataloader = dict(
-    batch_size=2,
-    num_workers=2,
+    batch_size=8,
+    num_workers=8,
     persistent_workers=True,
     sampler=dict(type='DefaultSampler', shuffle=True),
     batch_sampler=None,
+    pin_memory=False,
     dataset=dict(
         type=dataset_type,
         data_root=data_root,
@@ -69,16 +84,15 @@ test_evaluator = val_evaluator
 # inference on test dataset and format the output results
 # for submission. Note: the test set has no annotation.
 # test_dataloader = dict(
-#     batch_size=1,
-#     num_workers=2,
-#     persistent_workers=True,
+#     batch_size=8,
+#     num_workers=8,
+#     persistent_workers=False,
 #     drop_last=False,
 #     sampler=dict(type='DefaultSampler', shuffle=False),
 #     dataset=dict(
 #         type=dataset_type,
 #         data_root=data_root,
-#         ann_file='',
-#         data_prefix=dict(img_path='ez_test/images/'),
+#         data_prefix=dict(img_path='test/images/'),
 #         img_shape=(1024, 1024),
 #         test_mode=True,
 #         pipeline=test_pipeline))
@@ -86,4 +100,4 @@ test_evaluator = val_evaluator
 #     type='DOTAMetric',
 #     format_only=True,
 #     merge_patches=True,
-#     outfile_prefix='./work_dirs/dota/Task1')
+#     outfile_prefix='./work_dirs/rtmdet_r/Task1')
