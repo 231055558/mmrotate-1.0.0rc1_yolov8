@@ -30,7 +30,7 @@ Models:
 
   - Name: roi-trans-le90_r50_fpn_1x_dota
     In Collection: roi_trans
-    Config: configs/roi_trans/roi-trans-le90_r50_fpn_1x_dota.py
+    Config: configs/roi_trans/roi-trans-le90_yolov8_simple_1x_dota.py
     Metadata:
       Training Data: DOTAv1.0
     Results:

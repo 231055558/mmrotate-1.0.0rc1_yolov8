@@ -15,14 +15,15 @@ model = dict(
         pad_size_divisor=32,
         boxtype2tensor=False),
     backbone=dict(
-        type='YOLOv8CSPDarknet',
+        type='YOLOv8CSPDarknet_B',
         arch='P5',
         last_stage_out_channels=1024,
         deepen_factor=0.33,
         widen_factor=0.5,
         norm_cfg=dict(type='BN', momentum=0.03, eps=0.001),
         act_cfg=dict(type='SiLU', inplace=True),
-    ),
+
+        ),
     neck=dict(
         type='YOLOv8PAFPN_SIMPLE',
         deepen_factor=0.33,

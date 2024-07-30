@@ -41,7 +41,7 @@ class TestTwoStageBBox(TestCase):
     @parameterized.expand([
         'rotated_faster_rcnn/rotated-faster-rcnn-le90_r50_fpn_1x_dota.py',
         'oriented_rcnn/oriented-rcnn-le90_r50_fpn_1x_dota.py',
-        'roi_trans/roi-trans-le90_r50_fpn_1x_dota.py',
+        'roi_trans/roi-trans-le90_yolov8_simple_1x_dota.py',
     ])
     def test_two_stage_forward_loss_mode(self, cfg_file):
         model = get_detector_cfg(cfg_file)

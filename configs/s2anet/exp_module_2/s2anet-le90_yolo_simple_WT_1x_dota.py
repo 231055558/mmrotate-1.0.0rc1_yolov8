@@ -22,9 +22,10 @@ model = dict(
         widen_factor=0.5,
         norm_cfg=dict(type='BN', momentum=0.03, eps=0.001),
         act_cfg=dict(type='SiLU', inplace=True),
-    ),
+
+        ),
     neck=dict(
-        type='YOLOv8PAFPN_SIMPLE',
+        type='YOLOv8PAFPN_SIMPLE_WT',
         deepen_factor=0.33,
         widen_factor=0.5,
         # in_channels=[256, 512, 1024, 2048],

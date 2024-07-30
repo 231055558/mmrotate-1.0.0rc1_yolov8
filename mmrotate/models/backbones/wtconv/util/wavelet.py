@@ -1,6 +1,7 @@
 import pywt
 import pywt.data
 import torch
+from torch import nn
 from torch.autograd import Function
 import torch.nn.functional as F
 

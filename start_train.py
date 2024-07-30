@@ -8,7 +8,7 @@ from tools.analysis_tools.benchmark import main as analysis
 # configs/roi_trans/roi-trans-le90_yolov8_yolopafpn_3head_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
 # configs/roi_trans/roi-trans-le90_yolov8_yolopafpn_l_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
 # configs/roi_trans/roi-trans-le90_r50_yolov8fpn_multihead_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
-# configs/roi_trans/roi-trans-le90_r50_fpn_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/roi_yolo_work_result/
+# configs/roi_trans/roi-trans-le90_yolov8_simple_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/roi_yolo_work_result/
 # configs/roi_trans/roi-trans-le90_yolov8_pafpn_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
 # configs/roi_trans/roi-trans-le90_yolov8_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
 # configs/roi_trans/roi-trans-le90_wtconv_fpn_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
@@ -23,15 +23,15 @@ from tools.analysis_tools.benchmark import main as analysis
 
 # configs/roi_trans/roi-trans-le90_yolov8_dota.py --checkpoint ../checkpoints/yolo/epoch_4.pth --task inference
 # configs/roi_trans/roi-trans-le90_yolov8_dota.py --checkpoint ../checkpoints/yolov8/yolov8_s_syncbn_fast_8xb16-500e_coco_20230117_180101-5aa5f0f1.pth --task inference
-# configs/roi_trans/roi-trans-le90_r50_fpn_1x_dota.py --checkpoint ../checkpoints/roi_trans_res_result/epoch_12.pth --task inference
-# configs/roi_trans/roi-trans-le90_r50_fpn_1x_dota.py --checkpoint ../checkpoints/yolo/epoch_4.pth --task inference
+# configs/roi_trans/roi-trans-le90_yolov8_simple_1x_dota.py --checkpoint ../checkpoints/roi_trans_res_result/epoch_12.pth --task inference
+# configs/roi_trans/roi-trans-le90_yolov8_simple_1x_dota.py --checkpoint ../checkpoints/yolo/epoch_4.pth --task inference
 # configs/roi_trans/roi-trans-le90_r50_pafpn_1x_dota.py --checkpoint ../checkpoints/yolo/epoch_4.pth --task inference
 # configs/roi_trans/roi-trans-le90_swin-tiny_fpn_1x_dota.py --checkpoint ../checkpoints/roi_trans_swin/roi_trans_swin_tiny_fpn_1x_dota_le90-ddeee9ae.pth --task inference
 # configs/roi_trans/roi-trans-le90_vit_fpn_1x_dota.py --checkpoint ../checkpoints/roi_trans_swin/roi_trans_swin_tiny_fpn_1x_dota_le90-ddeee9ae.pth --task inference
 
 
-# configs/roi_trans/roi-trans-le90_r50_fpn_1x_dota.py ../../total_work_result/roi_result_12/epoch_12.pth --work-dir ../../total_work_result/roi_result_12/test_result
-# configs/roi_trans/roi-trans-le90_r50_fpn_1x_dota.py --checkpoint ../../total_work_result/roi_result_12/epoch_12.pth --task inference
+# configs/roi_trans/roi-trans-le90_yolov8_simple_1x_dota.py ../../total_work_result/roi_result_12/epoch_12.pth --work-dir ../../total_work_result/roi_result_12/test_result
+# configs/roi_trans/roi-trans-le90_yolov8_simple_1x_dota.py --checkpoint ../../total_work_result/roi_result_12/epoch_12.pth --task inference
 
 # configs/s2anet/s2anet-le90_r50_fpn_1x_dota.py ../../total_work_result/s2anet_re50_result/epoch_12.pth --work-dir ../../total_work_result/s2anet_re50_result/test_result
 # configs/s2anet/s2anet-le90_r50_fpn_1x_dota.py --checkpoint ../../total_work_result/s2anet_re50_result/epoch_12.pth --task inference
@@ -74,6 +74,11 @@ from tools.analysis_tools.benchmark import main as analysis
 # configs/s2anet/exp_module_2/s2anet-le90_yolo_simple03_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
 # configs/s2anet/exp_module_2/s2anet-le90_yolo_simple14_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
 # configs/s2anet/exp_module_2/s2anet-le90_yolo_simple_WT_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
+# configs/s2anet/exp_module_2/s2anet-le90_yolo_simple_WT_B_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
+# configs/s2anet/exp_module_3/s2anet-le90_yoloB_simple_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
+# configs/s2anet/exp_module_3/s2anet-le90_yolo_simple_lsk_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
+# configs/s2anet/exp_module_3/s2anet-le90_yolo_simple_wt_lsk_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
+# configs/roi_trans/exp_module/roi-trans-le90_yolov8_simple_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
 
 
 if __name__ == '__main__':

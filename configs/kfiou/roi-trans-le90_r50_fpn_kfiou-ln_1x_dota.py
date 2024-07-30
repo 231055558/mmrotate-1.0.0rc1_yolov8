@@ -1,4 +1,4 @@
-_base_ = '../roi_trans/roi-trans-le90_r50_fpn_1x_dota.py'
+_base_ = '../roi_trans/roi-trans-le90_yolov8_simple_1x_dota.py'
 
 angle_version = 'le90'
 model = dict(
