@@ -1,8 +1,8 @@
 import os
 
 # 输入文件夹路径和输出文件夹路径
-input_folder = './Task1-test2/'  # 替换为你的输入文件夹路径
-output_folder = './Task1-test2/output/'  # 替换为你的输出文件夹路径
+input_folder = './zuobi/'  # 替换为你的输入文件夹路径
+output_folder = './zuobi/output/'  # 替换为你的输出文件夹路径
 
 # 创建输出文件夹（如果不存在）
 os.makedirs(output_folder, exist_ok=True)

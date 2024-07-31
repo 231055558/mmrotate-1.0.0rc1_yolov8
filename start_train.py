@@ -78,6 +78,10 @@ from tools.analysis_tools.benchmark import main as analysis
 # configs/s2anet/exp_module_3/s2anet-le90_yoloB_simple_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
 # configs/s2anet/exp_module_3/s2anet-le90_yolo_simple_lsk_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
 # configs/s2anet/exp_module_3/s2anet-le90_yolo_simple_wt_lsk_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
+
+# configs/s2anet/exp_module_4/s2anet-le90_yolo_simple_1x_dota_ms_rr.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
+# configs/s2anet/exp_module_2/s2anet-le90_yolo_simple_WT_B_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
+
 # configs/roi_trans/exp_module/roi-trans-le90_yolov8_simple_1x_dota.py --work-dir /mnt/mydisk/code/total_work_result/train_work_result/
 
 
