@@ -11,7 +11,7 @@ Collections:
   Paper:
     URL: https://arxiv.org/pdf/2106.01883.pdf
     Title: 'Learning High-Precision Bounding Box for Rotated Object Detection via Kullback-Leibler Divergence'
-  README: configs/kld/README.md
+  README: configs/kld/README.md.md
 
 Models:
   - Name: rotated-retinanet-hbox-oc_r50_fpn_kld_1x_dota

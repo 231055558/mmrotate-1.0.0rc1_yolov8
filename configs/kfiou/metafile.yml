@@ -11,7 +11,7 @@ Collections:
   Paper:
     URL: https://arxiv.org/pdf/2101.11952.pdf
     Title: 'The KFIoU Loss for Rotated Object Detection'
-  README: configs/kfiou/README.md
+  README: configs/kfiou/README.md.md
 
 Models:
   - Name: rotated-retinanet-hbox-le90_r50_fpn_kfiou_1x_dota

@@ -11,7 +11,7 @@ Collections:
   Paper:
     URL: https://arxiv.org/abs/2211.06368.pdf
     Title: 'Phase-Shifting Coder: Predicting Accurate Orientation in Oriented Object Detection'
-  README: configs/psc/README.md
+  README: configs/psc/README.md.md
 
 Models:
   - Name: rotated-fcos-hbox-le90_r50_fpn_psc-dual_1x_dota

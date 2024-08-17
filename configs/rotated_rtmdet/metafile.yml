@@ -11,7 +11,7 @@ Collections:
       Architecture:
         - CSPNeXt
         - CSPNeXtPAFPN
-    README: configs/rotated_rtmdet/README.md
+    README: configs/rotated_rtmdet/README.md.md
 
 Models:
   - Name: rotated_rtmdet_tiny-3x-dota

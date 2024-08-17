@@ -3,7 +3,7 @@ name: merge_stage_test
 on:
   push:
     paths-ignore:
-      - 'README.md'
+      - 'README.md.md'
       - 'README_zh-CN.md'
       - 'docs/**'
       - 'demo/**'

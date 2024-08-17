@@ -32,7 +32,7 @@ python tools/test.py projects/example_project/confsigs/r3det-oc_dummy-resnet_fpn
 
 ## Results
 
-<!-- List the results as usually done in other model's README. [Example](https://github.com/open-mmlab/mmrotate/blob/1.x/configs/r3det/README.md#results-and-models)
+<!-- List the results as usually done in other model's README.md. [Example](https://github.com/open-mmlab/mmrotate/blob/1.x/configs/r3det/README.md#results-and-models)
 You should claim whether this is based on the pre-trained weights, which are converted from the official release; or it's a reproduced result obtained from retraining the model in this project. -->
 
 |         Backbone         |  mAP  | Angle | lr schd | Mem (GB) | Inf Time (fps) | Aug | Batch Size |                                      Configs                                       |         Download         |
@@ -107,6 +107,6 @@ A project does not necessarily have to be finished in a single PR, but it's esse
 
 - [ ] Move your modules into the core package following the codebase's file hierarchy structure.
 
-  <!-- In particular, you may have to refactor this README into a standard one. [Example](https://github.com/open-mmlab/mmrotate/blob/1.x/configs/r3det/README.md) -->
+  <!-- In particular, you may have to refactor this README.md into a standard one. [Example](https://github.com/open-mmlab/mmrotate/blob/1.x/configs/r3det/README.md) -->
 
 - [ ] Refactor your modules into the core package following the codebase's file hierarchy structure.

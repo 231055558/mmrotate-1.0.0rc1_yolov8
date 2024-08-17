@@ -11,7 +11,7 @@ Collections:
   Paper:
     URL: https://arxiv.org/pdf/1708.02002.pdf
     Title: 'Focal loss for dense object detection'
-  README: configs/rotated_retinanet/README.md
+  README: configs/rotated_retinanet/README.md.md
 
 Models:
   - Name: rotated-retinanet-hbox-oc_r50_fpn_1x_dota

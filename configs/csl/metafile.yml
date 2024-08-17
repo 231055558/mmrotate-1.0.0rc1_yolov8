@@ -11,7 +11,7 @@ Collections:
   Paper:
     URL: https://link.springer.com/chapter/10.1007/978-3-030-58598-3_40
     Title: 'Arbitrary-Oriented Object Detection with Circular Smooth Label'
-  README: configs/csl/README.md
+  README: configs/csl/README.md.md
 
 Models:
   - Name: rotated-retinanet-rbox-le90_r50_fpn_csl-gaussian_amp-1x_dota

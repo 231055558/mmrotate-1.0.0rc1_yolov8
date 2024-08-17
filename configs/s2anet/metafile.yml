@@ -11,7 +11,7 @@ Collections:
   Paper:
     URL: https://ieeexplore.ieee.org/document/9377550
     Title: 'Align Deep Features for Oriented Object Detection'
-  README: configs/s2anet/README.md
+  README: configs/s2anet/README.md.md
 
 Models:
   - Name: s2anet-le135_r50_fpn_1x_dota

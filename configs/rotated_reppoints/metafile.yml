@@ -11,7 +11,7 @@ Collections:
   Paper:
     URL: https://arxiv.org/pdf/1904.11490.pdf
     Title: 'RepPoints: Point Set Representation for Object Detection'
-  README: configs/cfa/README.md
+  README: configs/cfa/README.md.md
 
 Models:
   - Name: rotated-reppoints-qbox_r50_fpn_1x_dota

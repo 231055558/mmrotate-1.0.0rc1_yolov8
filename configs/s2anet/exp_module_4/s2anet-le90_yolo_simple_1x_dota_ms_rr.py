@@ -1,5 +1,5 @@
 _base_ = [
-    '../../_base_/datasets/dota_rr_ms.py', '../../_base_/schedules/schedule_1x.py',
+    '../../_base_/datasets/dota_rr.py', '../../_base_/schedules/schedule_1x.py',
     '../../_base_/default_runtime.py'
 ]
 train_cfg = dict(type='EpochBasedTrainLoop', max_epochs=12, val_interval=6)

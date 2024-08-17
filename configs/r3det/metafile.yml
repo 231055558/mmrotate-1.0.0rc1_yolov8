@@ -11,7 +11,7 @@ Collections:
   Paper:
     URL: https://arxiv.org/pdf/1908.05612.pdf
     Title: 'R3Det: Refined Single-Stage Detector with Feature Refinement for Rotating Object'
-  README: configs/r3det/README.md
+  README: configs/r3det/README.md.md
 
 Models:
   - Name: r3det-oc_r50_fpn_1x_dota

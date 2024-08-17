@@ -42,8 +42,8 @@ train_dataloader = dict(
     dataset=dict(
         type=dataset_type,
         data_root=data_root,
-        ann_file='test/annfiles/',
-        data_prefix=dict(img_path='test/images/'),
+        ann_file='trainval/annfiles/',
+        data_prefix=dict(img_path='trainval/images/'),
         img_shape=(1024, 1024),
         filter_cfg=dict(filter_empty_gt=True),
         pipeline=train_pipeline))
@@ -56,8 +56,8 @@ val_dataloader = dict(
     dataset=dict(
         type=dataset_type,
         data_root=data_root,
-        ann_file='test/annfiles/',
-        data_prefix=dict(img_path='test/images/'),
+        ann_file='trainval/annfiles/',
+        data_prefix=dict(img_path='trainval/images/'),
         img_shape=(1024, 1024),
         test_mode=True,
         pipeline=val_pipeline))

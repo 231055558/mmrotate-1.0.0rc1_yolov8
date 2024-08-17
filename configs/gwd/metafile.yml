@@ -11,7 +11,7 @@ Collections:
   Paper:
     URL: https://arxiv.org/pdf/2101.11952.pdf
     Title: 'Rethinking Rotated Object Detection with Gaussian Wasserstein Distance Loss'
-  README: configs/gwd/README.md
+  README: configs/gwd/README.md.md
 
 Models:
   - Name: rotated-retinanet-hbox-oc_r50_fpn_gwd_1x_dota

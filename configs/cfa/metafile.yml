@@ -11,7 +11,7 @@ Collections:
   Paper:
     URL: https://openaccess.thecvf.com/content/CVPR2021/papers/Guo_Beyond_Bounding-Box_Convex-Hull_Feature_Adaptation_for_Oriented_and_Densely_Packed_CVPR_2021_paper.pdf
     Title: 'Beyond Bounding-Box: Convex-hull Feature Adaptation for Oriented and Densely Packed Object Detection'
-  README: configs/cfa/README.md
+  README: configs/cfa/README.md.md
 
 Models:
   - Name: cfa-qbox_r50_fpn_1x_dota

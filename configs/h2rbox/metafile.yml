@@ -11,7 +11,7 @@ Collections:
   Paper:
     URL: https://arxiv.org/abs/2210.06742.pdf
     Title: 'H2RBox: Horizontal Box Annotation is All You Need for Oriented Object Detection'
-  README: configs/h2rbox/README.md
+  README: configs/h2rbox/README.md.md
 
 Models:
   - Name: h2rbox-le90_r50_fpn_adamw-1x_dota

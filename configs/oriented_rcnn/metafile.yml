@@ -11,7 +11,7 @@ Collections:
   Paper:
     URL: https://openaccess.thecvf.com/content/ICCV2021/papers/Xie_Oriented_R-CNN_for_Object_Detection_ICCV_2021_paper.pdf
     Title: 'Oriented R-CNN for Object Detection'
-  README: configs/oriented_rcnn/README.md
+  README: configs/oriented_rcnn/README.md.md
 
 Models:
   - Name: oriented-rcnn-le90_r50_fpn_amp-1x_dota

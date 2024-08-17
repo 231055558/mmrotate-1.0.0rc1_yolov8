@@ -11,7 +11,7 @@ Collections:
   Paper:
     URL: https://openaccess.thecvf.com/content/CVPR2022/papers/Li_Oriented_RepPoints_for_Aerial_Object_Detection_CVPR_2022_paper.pdf
     Title: 'Oriented RepPoints for Aerial Object Detection'
-  README: configs/oriented_reppoints/README.md
+  README: configs/oriented_reppoints/README.md.md
 
 Models:
   - Name: oriented-reppoints-qbox_r50_fpn_1x_dota

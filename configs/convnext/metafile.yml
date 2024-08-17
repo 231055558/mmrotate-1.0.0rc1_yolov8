@@ -11,7 +11,7 @@ Collections:
   Paper:
     URL: https://arxiv.org/abs/2201.03545
     Title: 'A ConvNet for the 2020s'
-  README: configs/convnext/README.md
+  README: configs/convnext/README.md.md
 
 Models:
   - Name: rotated-retinanet-rbox-le90_convnext-tiny_fpn_kld-stable_adamw-1x_dota
